@@ -3,6 +3,7 @@ import FormInput from '../FormInput';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { SimulationSchema } from '@/src/schemas/simulation';
+import { useRouter } from 'next/navigation';
 
 const SimulationForm = () => {
   const {
@@ -12,11 +13,13 @@ const SimulationForm = () => {
   } = useForm({
     resolver: yupResolver(SimulationSchema),
   });
+  const router = useRouter();
 
   type Simulation = yup.InferType<typeof SimulationSchema>;
 
   const onSubmit = (data: Simulation) => {
-    console.log(data);
+    localStorage.setItem('simulationToShow', JSON.stringify(data))
+    router.push('/simulationResult')
   };
 
   return (

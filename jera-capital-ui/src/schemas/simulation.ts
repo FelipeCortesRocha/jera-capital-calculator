@@ -11,4 +11,5 @@ export const SimulationSchema = yup.object().shape({
   periodInMonths: yup.number().transform(transform).required('Por favor insira o "Período em meses"'),
   fixedIncome: yup.number().transform(transform).required('Por favor insira a "Taxa de juros anual"'),
   variableIncome: yup.number().transform(transform).required('Por favor insira a "Rentabilidade esperada anual + volatilidade"'),
+  date: yup.date().nullable()
 });

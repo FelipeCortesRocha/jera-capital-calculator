@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const navigation = [
   { name: 'Nova simulação', href: '/' },
-  { name: 'Simulações salvas', href: '/simulationResult' },
+  { name: 'Simulações salvas', href: '/savedSimulations' },
 ];
 
 export default function Header() {
