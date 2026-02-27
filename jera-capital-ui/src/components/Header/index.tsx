@@ -18,10 +18,10 @@ export default function Header() {
     <header className="absolute inset-x-0 top-0 z-50 bg-teal-600">
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <Image src="/logo-1.webp" alt="Jera Capital logo" width={100} height={30} priority />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button type="button" onClick={() => setMobileMenuOpen(true)} className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-200">

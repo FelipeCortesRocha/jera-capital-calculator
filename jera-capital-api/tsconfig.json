@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "rootDir": ".",
+        "outDir": "dist",
+        "lib": ["es2023"],
+        "target": "es2023",
+        "module": "preserve",
+        "moduleResolution": "bundler",
+        "esModuleInterop": true,
+        "types": ["node"],
+        "allowImportingTsExtensions": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "strictPropertyInitialization": false
+    },
+    "ts-node": {
+        "esm": true
+    }
+}
