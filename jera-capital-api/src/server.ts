@@ -110,5 +110,5 @@ app.delete('/simulations/:id', async (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`Jera Capital API listening on port ${port}`)
 })

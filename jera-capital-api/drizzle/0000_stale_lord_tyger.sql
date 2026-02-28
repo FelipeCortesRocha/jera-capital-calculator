@@ -8,7 +8,11 @@ CREATE TABLE `simulations` (
 	`variable_income` numeric NOT NULL,
 	`monthly_fixed_income` text,
 	`monthly_variable_income` text,
-	`income_tax` numeric,
-	`iof` numeric,
+	`income_tax_fixed` numeric,
+	`iof_fixed` numeric,
+	`income_tax_variable` numeric,
+	`iof_variable` numeric,
+	`profitability_fixed` numeric,
+	`profitability_variable` numeric,
 	`created_at` numeric
 );

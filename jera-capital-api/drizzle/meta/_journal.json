@@ -5,15 +5,8 @@
     {
       "idx": 0,
       "version": "6",
-      "when": 1772215857356,
-      "tag": "0000_outstanding_serpent_society",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "6",
-      "when": 1772227859771,
-      "tag": "0001_old_epoch",
+      "when": 1772237580607,
+      "tag": "0000_stale_lord_tyger",
       "breakpoints": true
     }
   ]

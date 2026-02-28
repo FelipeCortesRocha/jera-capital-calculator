@@ -58,11 +58,11 @@ export const calculateSimulation = (input: SimulationInput) => {
             const profitabilityFixed = actualValueFixed - input.initialValue
             const profitabilityVariable = actualValueVariable - input.initialValue
 
-            iofFixed = profitabilityFixed * (iofPercentage/100)
-            incomeTaxFixed = (profitabilityFixed - iofFixed) * (incomePercentage/100)
+            iofFixed = floatToFixed(profitabilityFixed * (iofPercentage/100))
+            incomeTaxFixed = floatToFixed((profitabilityFixed - iofFixed) * (incomePercentage/100))
 
-            iofVariable = profitabilityVariable * (iofPercentage/100)
-            incomeTaxVariable = (profitabilityVariable - iofVariable) * (incomePercentage/100)
+            iofVariable = floatToFixed(profitabilityVariable * (iofPercentage/100))
+            incomeTaxVariable = floatToFixed((profitabilityVariable - iofVariable) * (incomePercentage/100))
 
             return {
                 ...input,

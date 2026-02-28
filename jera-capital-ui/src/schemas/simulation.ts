@@ -17,7 +17,7 @@ export const SimulationSchema = yup.object().shape({
   incomeTaxFixed: yup.number().transform(transform).positive().nullable(),
   iofFixed: yup.number().transform(transform).positive().nullable(),
   incomeTaxVariable: yup.number().transform(transform).positive().nullable(),
-  iofFixedVariable: yup.number().transform(transform).positive().nullable(),
+  iofVariable: yup.number().transform(transform).positive().nullable(),
   profitabilityFixed: yup.number().transform(transform).positive().nullable(),
   profitabilityVariable: yup.number().transform(transform).positive().nullable(),
   createdAt: yup.date().nullable(),

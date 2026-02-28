@@ -13,7 +13,7 @@ export const SimulationsTable = sqliteTable('simulations', {
     incomeTaxFixed: numeric('income_tax_fixed'),
     iofFixed: numeric('iof_fixed'),
     incomeTaxVariable: numeric('income_tax_variable'),
-    iofFixedVariable: numeric('iof_variable'),
+    iofVariable: numeric('iof_variable'),
     profitabilityFixed: numeric('profitability_fixed'),
     profitabilityVariable: numeric('profitability_variable'),
     createdAt: numeric('created_at')
